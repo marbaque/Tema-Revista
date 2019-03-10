@@ -1,0 +1,126 @@
+.archive-view {
+
+  .site-main {
+
+    @media screen and(min-width: $query__sm) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  .archive-header {
+    width: 100%;
+    clear: both;
+    display: block;
+    flex-shrink: 0;
+    border-top: 3px solid $color__text-main;
+    margin-bottom: 1em;
+
+    .page-title {
+      margin-top: 0;
+      font-size: .9em;
+    }
+  }
+
+  .post, .page {
+    margin: 0 0 1.5em;
+    box-shadow: 0 0 0 2px $color__background-body;
+    position: relative;
+    border-top: 3px solid $color__rojo;
+
+    @media screen and(min-width: $query__sm) {
+      width: 48%;
+    }
+
+    figure.index-image {
+      width: 100%;
+      height: auto;
+      max-height: 200px;
+      overflow: hidden;
+      margin: 0;
+      border-bottom: 1px solid $color__background-body;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    .post_content{
+      padding: 1em 1em 4em;
+
+      .entry-header {
+
+        h2.entry-title {
+          margin: 0 0 .5em;
+          font-size: 1.3em;
+          line-height: 1.2;
+
+          @media screen and (min-width: $query__sm) {
+            font-size: 1em;
+          }
+
+          a {
+            text-decoration: none;
+          }
+        }
+
+        .entry-meta {
+          font-size: .8em;
+          color: #aaa;
+
+          @media screen and(min-width: $query__sm) {
+            font-size: .6em;
+          }
+
+          a {
+            color: #aaa;
+           }
+        }
+      }
+
+      .entry-content {
+        margin: 0;
+        @include word-wrap();
+
+        @media screen and (min-width: $query__sm) {
+          font-size: .8em;
+        }
+      }
+
+      .entry-footer {
+        font-size: .8em;
+      }
+
+      .entry-footer,
+      .entry-meta {
+        >span:after {
+          content: "|";
+          margin: 0 .2em;
+        }
+        >span:last-child:after {
+          content: "";
+          margin: 0;
+        }
+      }
+
+      .continue-reading a {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: $color__background-body;
+        padding: 1em;
+        text-decoration: none;
+        font-size: .8em;
+
+        &:hover {
+  				background: $color__rojo;
+  				color: white!important;
+  			}
+      }
+    }
+  }
+}

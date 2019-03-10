@@ -1,0 +1,47 @@
+a {
+	color: $color__link;
+
+	&:visited {
+		color: $color__link-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+
+	@include word-wrap();
+}
+
+// paginación de archive-view
+.posts-navigation,
+.pagination {
+	width: 100%;
+	font-size: .8em;
+	text-align: center;
+}
+
+
+.nav-links {
+	@include font-size(1.1);
+
+	a,
+	span.current {
+		background: $color__background-body;
+		padding: 1em;
+		display: inline-block;
+		text-decoration: none;
+
+		&:hover {
+			background: $color__rojo;
+			color: white;
+		}
+	}
+}

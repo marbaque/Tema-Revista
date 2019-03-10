@@ -1,0 +1,72 @@
+.site-header {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border-bottom: 1px solid $color__background-body;
+  position: relative;
+
+  @media screen and (min-width: $query__md) {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+
+  .site-branding {
+    font-family: $font__serif;
+    margin: 1em;
+    line-height: 1.1;
+    min-width: 340px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+
+    @media screen and(min-width: $query__sm) {
+      width: 30%;
+      flex-shrink: 0;
+      margin: 1em 2em 1em;
+    }
+
+    .custom-logo-link {
+      width: 60px;
+      margin-right: 1rem;
+      @media screen and (min-width: $query__md) {
+        width: 80px;
+      }
+    }
+
+    .site-branding__text {
+      overflow-x: visible;
+      white-space: nowrap;
+    }
+    .site-title,
+    .site-description {
+      margin: 0;
+      padding: 0;
+      font-weight: 700;
+    }
+
+    .site-title {
+      font-size: 1.4rem;
+      line-height: 1.2;
+
+      @media screen and (min-width: $query__md) {
+        font-size: 1.8rem;
+      }
+
+      a {
+        color: $color__text-main;
+      }
+    }
+    .site-description {
+      font-size: .8rem;
+      @media screen and (min-width: $query__md) {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
