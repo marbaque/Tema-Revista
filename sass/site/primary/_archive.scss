@@ -17,6 +17,7 @@
     flex-shrink: 0;
     border-top: 3px solid $color__text-main;
     margin-bottom: 1em;
+    padding-top: .2em;
 
     .page-title {
       margin-top: 0;
@@ -28,7 +29,7 @@
     margin: 0 0 1.5em;
     box-shadow: 0 0 0 2px $color__background-body;
     position: relative;
-    border-top: 3px solid $color__rojo;
+    border-bottom: 3px solid $color__rojo;
 
     @media screen and(min-width: $query__sm) {
       width: 48%;
@@ -46,6 +47,12 @@
         width: 100%;
         object-fit: cover;
         object-position: center;
+        transition: .5s all;
+        &:hover {
+          -webkit-filter: contrast(120%); /* Safari */
+          filter: contrast(120%);
+          transform: scale(1.1);
+        }
       }
     }
 

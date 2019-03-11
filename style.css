@@ -1244,6 +1244,7 @@ a:hover, a:active {
 	    flex-shrink: 0;
 	border-top: 3px solid #484f59;
 	margin-bottom: 1em;
+	padding-top: .2em;
 }
 
 .archive-view .archive-header .page-title {
@@ -1255,7 +1256,7 @@ a:hover, a:active {
 	margin: 0 0 1.5em;
 	box-shadow: 0 0 0 2px #f4f6f8;
 	position: relative;
-	border-top: 3px solid #ef4136;
+	border-bottom: 3px solid #ef4136;
 }
 
 @media screen and (min-width: 600px) {
@@ -1279,6 +1280,13 @@ a:hover, a:active {
 	   object-fit: cover;
 	-o-object-position: center;
 	   object-position: center;
+	transition: .5s all;
+}
+
+.archive-view .post figure.index-image img:hover, .archive-view .page figure.index-image img:hover {
+	/* Safari */
+	filter: contrast(120%);
+	transform: scale(1.1);
 }
 
 .archive-view .post .post_content, .archive-view .page .post_content {
