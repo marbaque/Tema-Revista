@@ -31,7 +31,7 @@ get_header();
 
 			if ( is_front_page() ): ?>
 			<header class="archive-header">
-				<h1 class="page-title"><?php echo esc_html__( 'Recent posts', 'rev-politica' ); ?></h1>
+				<h1 class="page-title"><?php echo esc_html__( 'Recent posts', 'rev_politica' ); ?></h1>
 			</header><!-- .page-header -->
 
 		<?php

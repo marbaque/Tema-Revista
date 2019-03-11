@@ -35,10 +35,10 @@
 					<?php
 					rev_politica_posted_on();
 					rev_politica_posted_by();
-					$categories_list = get_the_category_list( esc_html__( ', ', 'rev-politica' ) );
+					$categories_list = get_the_category_list( esc_html__( ', ', 'rev_politica' ) );
 					if ( $categories_list ) {
 						/* translators: 1: list of categories. */
-						printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'rev-politica' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+						printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'rev_politica' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 					}
 					//rev_politica_entry_footer();
 					?>
