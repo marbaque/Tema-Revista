@@ -4,17 +4,46 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2019-03-11 00:47+0000\n"
+"POT-Creation-Date: 2019-03-11 01:11+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-03-11 00:53+0000\n"
+"PO-Revision-Date: 2019-03-11 01:14+0000\n"
 "Last-Translator: admin <mario.badilla@gmail.com>\n"
 "Language-Team: Español de Costa Rica\n"
 "X-Generator: Loco https://localise.biz/\n"
 "Language: es_CR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Loco-Version: 2.2.1; wp-5.1"
+
+#: functions.php:49
+msgid "Primary"
+msgstr "Principal"
+
+#: functions.php:50
+msgid "Social"
+msgstr "Social"
+
+#: functions.php:129
+msgid "Sidebar"
+msgstr "Barra lateral"
+
+#: functions.php:131
+msgid "Add widgets here."
+msgstr "Agregue widgets aquí."
+
+#. If there are characters in your language that are not
+#. supported by Alegreya Sans and Alegreya, translate this to 'off'. Do not translate
+#. into your own language.
+#: functions.php:151
+msgctxt "Alegreya Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:152
+msgctxt "Alegreya font: on or off"
+msgid "on"
+msgstr ""
 
 #: 404.php:18
 msgid "Oops! That page can&rsquo;t be found."
@@ -41,6 +70,18 @@ msgstr "Intente en las colecciones mensuales. %1$s"
 #: index.php:34
 msgid "Recent posts"
 msgstr "Recientes"
+
+#: archive.php:39
+msgid "Newer"
+msgstr "Recientes"
+
+#: archive.php:40
+msgid "Older"
+msgstr "Anteriores"
+
+#: archive.php:41
+msgid "Page "
+msgstr "Página"
 
 #. translators: 1: title.
 #: comments.php:35
@@ -74,6 +115,14 @@ msgstr "Ir al contenido"
 #: header.php:51
 msgid "Primary Menu"
 msgstr "Menú principal"
+
+#: inc/icons.php:39
+msgid "Please define default parameters in the form of an array."
+msgstr "Por favor, defina los ajustes por defecto en forma de array."
+
+#: inc/icons.php:44
+msgid "Please define an SVG icon filename."
+msgstr "Por favor, defina un archivo SVG."
 
 #. translators: %s: post date.
 #: inc/template-tags.php:29
@@ -126,6 +175,22 @@ msgstr "Deje un comentario en <span class=\"screen-reader-text\"> en %s</span>"
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "Editar <span class=\"screen-reader-text\">%s</span>"
 
+#: inc/template-tags.php:155
+msgid "Next"
+msgstr "Siguiente"
+
+#: inc/template-tags.php:156
+msgid "Next post:"
+msgstr "Entrada siguiente:"
+
+#: inc/template-tags.php:158
+msgid "Previous"
+msgstr "Anterior"
+
+#: inc/template-tags.php:159
+msgid "Previous post:"
+msgstr "Entrada anterior:"
+
 #: template-parts/content-none.php:14
 msgid "Nothing Found"
 msgstr "Nada encontrado"
@@ -155,6 +220,12 @@ msgstr ""
 #: template-parts/content-page.php:24
 msgid "Pages:"
 msgstr "Páginas:"
+
+#. %s: Name of current post.
+#: template-parts/content.php:57 template-parts/content-search.php:57
+#, php-format
+msgid "Continue reading %s"
+msgstr "Leer %s"
 
 #. Name of the theme
 msgid "Revista Política"
