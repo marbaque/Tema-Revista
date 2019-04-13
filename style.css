@@ -1376,6 +1376,73 @@ a:hover, a:active {
 	color: white !important;
 }
 
+.archive-view.post-type-archive-diputado .site-main .diputado {
+	background: #f4f6f8;
+	border-radius: 4px;
+	border: 1px solid #909acd;
+	padding: 1em;
+	margin: 1em 0;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+	-ms-flex-align: center;
+	    align-items: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.archive-view.post-type-archive-diputado .site-main .diputado img {
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background: #2b3990;
+}
+
+.archive-view.post-type-archive-diputado .site-main .diputado .post_content {
+	margin-left: 1em;
+	font-size: 1rem;
+}
+
+.archive-view.post-type-archive-diputado .site-main .diputado .post_content h2.entry-title {
+	font-size: 1.25rem;
+	margin: 0 0 .5rem;
+}
+
+.archive-view.post-type-archive-diputado .site-main .diputado .post_content h2.entry-title a {
+	color: #1b75bc;
+	text-decoration: none;
+}
+
+.archive-view.post-type-archive-diputado .site-main .diputado .post_content p {
+	margin: 0;
+}
+
+.archive-view.post-type-archive-diputado .site-main .diputado .post_content .continue-reading a {
+	position: absolute;
+	right: -1px;
+	bottom: -1px;
+	padding: 4px 8px;
+	color: #909acd;
+	background: white;
+	font-size: 1rem;
+	text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+	.archive-view.post-type-archive-diputado .site-main {
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-pack: justify;
+		    justify-content: space-between;
+		-ms-flex-align: stretch;
+		    align-items: stretch;
+	}
+	.archive-view.post-type-archive-diputado .site-main .diputado {
+		width: 48%;
+	}
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/

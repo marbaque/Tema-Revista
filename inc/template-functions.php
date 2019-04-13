@@ -36,3 +36,11 @@ function rev_politica_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'rev_politica_pingback_header' );
+
+
+//quitar titulo por defecto de diputados cpt
+function remove_post_type_title() {
+	remove_post_type_support( 'diputado', 'title' );
+	remove_post_type_support( 'diputado', 'editor' );
+}
+add_action( 'init', 'remove_post_type_title' );
