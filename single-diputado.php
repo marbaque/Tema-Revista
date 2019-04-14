@@ -25,7 +25,7 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-    <div class="widget-area">
+    <div class="widget-area" role="sidebar">
         <div class="widget widget-personal">
         
             <?php 
@@ -34,28 +34,30 @@ get_header();
             $size = 'thumbnail';
 
             if( $foto ) {
-
+                echo '<figure class="avatar">';
                 echo wp_get_attachment_image( $foto, $size );
+                echo '</figure>';
 
             } else {
-
+                echo '<figure class="avatar">';
                 echo '<img src="' . get_template_directory_uri() . '/img/usuario.png" alt="imagen genérica de usuario">';
+                echo '</figure>';
             }
             ?>
 
-            <div class="redes">
+            <nav class="redes">
                 <?php
 
                 $facebook = get_field('facebook');
                 $twitter = get_field('twitter');
                 $email = get_field('email');
 
-                echo '<a href="' . $facebook . '">Facebook</a>';
-                echo '<a href="' . $twitter . '">Twitter</a>';
-                echo '<a href="' . $email . '">Email</a>';
+                echo '<a href="' . $facebook . '" title="' . __('Facebook Page', 'rev-politica') .'">' . rev_politica_get_svg( array( 'icon' => 'facebook' , 'fallback' => true ) ) .'</a>';
+                echo '<a href="' . $twitter . '" title="'. __('Twitter Account', 'rev-politica') . '">' . rev_politica_get_svg( array( 'icon' => 'twitter' , 'fallback' => true ) ) .'</a>';
+                echo '<a href="mailto:' . $email . '" title"' . __('Send email', 'rev-politica') .'">' . rev_politica_get_svg( array( 'icon' => 'envelope-o' , 'fallback' => true ) ) .'</a>';
 
                 ?>
-            </div>
+            </nav>
 
             <?php
             $nombre = get_field( 'nombre' );
@@ -68,7 +70,7 @@ get_header();
                 <?php 
                 
                 echo get_the_term_list(
-                $post->ID, 'fraccion', __('<li><strong>Fracción:</strong> ', 'pemscores'), ', ', '</li>' ); 
+                $post->ID, 'fraccion', __('<li>', 'pemscores'), ', ', '</li>' ); 
                 
                 $provincia = get_field('provincia');
                 if ($provincia) {

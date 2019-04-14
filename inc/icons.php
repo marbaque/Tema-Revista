@@ -184,7 +184,7 @@ function rev_politica_social_links_icons() {
 		'wordpress.com'   => 'wordpress',
 		'yelp.com'        => 'yelp',
 		'youtube.com'     => 'youtube',
-		'tel:'     				=> 'phone',
+		'tel:'     		=> 'phone',
 	);
 
 	/**
