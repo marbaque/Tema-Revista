@@ -61,7 +61,6 @@ get_header();
 
                     <a href="<?= $termUrl;  ?>"><p><?= $term->name; ?> <img class="bandera" src="<?php the_field('bandera', $term); ?>" aria-hidden></p></a>
                     
-
                 <?php endif;
                 
                 $provincia = get_field('provincia');

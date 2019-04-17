@@ -205,7 +205,7 @@ function rev_politica_scripts() {
 	wp_enqueue_style( 'rev_politica-fonts', rev_politica_fonts_url() );
 
 	// Fontawesome
-	wp_enqueue_style( 'rev_politica-fontawesome', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css', array(), null );
+	//wp_enqueue_style( 'rev_politica-fontawesome', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css', array(), null );
 
 	wp_enqueue_style( 'rev_politica-style', get_stylesheet_uri() );
 

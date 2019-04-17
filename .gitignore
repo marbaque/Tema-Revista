@@ -1,7 +1,6 @@
 # Don't track content of these folders
 **DS_Store
 node_modules/
-someOtherfoler/
 .sass-cache/
 
 
@@ -13,7 +12,6 @@ someOtherfoler/
 *.exe
 *.o
 *.so
-
 *.so
 
 # Packages #
