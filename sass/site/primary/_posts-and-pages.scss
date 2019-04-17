@@ -73,15 +73,21 @@
 // Single page para diputado
 .single-diputado {
 
+	.site-content {
+		@media screen and (min-width: $query__sm) {
+			flex-direction: row-reverse;
+		}
+	}
+
 	.widget-personal {
 		
 		.avatar {
 			text-align: center;
 
 			img {
-				border-radius: 50%;
 				width: 150px;
 				height: 150px;
+				background-color: $color__azuloscuro;
 			}
 		}
 
@@ -99,5 +105,10 @@
 		h2 {
 			text-align: center;
 		}
+	}
+
+	.entry-content {
+
+		
 	}
 }

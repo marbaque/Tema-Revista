@@ -31,3 +31,30 @@ select {
 textarea {
 	width: 100%;
 }
+
+
+.a1d-form {
+		
+	label {
+		font-size: .8em;
+	}
+	::-webkit-input-placeholder {
+		font-size: .8em;
+	}
+	.terminos {
+		font-size: .9rem;
+		padding: .5em 1em;
+		background: $color__background-body;
+		border-radius: .25em;
+	}
+
+	@media screen and (min-width: $query__sm) {
+		padding: 1em;
+		border: 1px solid $color__morado;
+		border-radius: 8px;
+
+		.terminos {
+			width: 60%;
+		}
+	}
+}
