@@ -207,7 +207,7 @@ function rev_politica_scripts() {
 	// Fontawesome
 	//wp_enqueue_style( 'rev_politica-fontawesome', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css', array(), null );
 
-	wp_enqueue_style( 'rev_politica-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'rev_politica-style', get_stylesheet_uri(), array(), '20190417', 'all' );
 
 	wp_enqueue_script( 'rev_politica-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
