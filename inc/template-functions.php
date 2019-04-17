@@ -80,3 +80,36 @@ function jb_update_postdata( $value, $post_id, $field ) {
 	
 }
 add_filter('acf/update_value/name=nombre', 'jb_update_postdata', 10, 3);
+
+/* * ********************************************************************* */
+// Dar a categorias del curso el mismo template de archivo de cursos page-capacitacion.php
+/* * ********************************************************************* */
+add_filter('template_include', function( $template ) {
+	if ( is_tax('fraccion') ) {
+		$locate = locate_template('archive-diputado.php', false, false);
+		if (!empty($locate)) {
+			$template = $locate;
+		}
+	}
+	return $template;
+});
+
+
+/**
+ * Show all Diputados CPT items on archive
+ *
+ */
+
+add_action( 'pre_get_posts', 'revista_show_all_work' );
+
+function revista_show_all_work( $query ) {
+    
+    if ( ! is_admin() && $query->is_main_query() ) {
+    
+        if ( is_post_type_archive( 'diputado' ) ) {
+            
+            $query->set('posts_per_page', -1 );
+    
+        }
+    }
+}

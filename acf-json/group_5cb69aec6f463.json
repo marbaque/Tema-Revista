@@ -1,0 +1,48 @@
+{
+    "key": "group_5cb69aec6f463",
+    "title": "Fracciones",
+    "fields": [
+        {
+            "key": "field_5cb69af5cb3a6",
+            "label": "Bandera",
+            "name": "bandera",
+            "type": "image",
+            "instructions": "Agregue la bandera. Tamaño indicado 128x64 píxeles.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": 64,
+            "min_height": 32,
+            "min_size": "",
+            "max_width": 132,
+            "max_height": 70,
+            "max_size": "",
+            "mime_types": "png,gif,jpg,jpeg"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "fraccion"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1555472651
+}

@@ -22,32 +22,19 @@ get_header();
 			</header><!-- .page-header -->
 
 			<?php
-			// WP_Query arguments
-			$args = array (
-				'post_type'			=> 'diputado',
-				'post_status'		=> 'publish',
-				'order'				=> 'ASC',
-				'meta_key'			=> 'nombre',
-				'orderby'			=> 'meta_value',
-				'posts_per_page'	=> -1 
-			);
+			/* Start the Loop */
+			while ( have_posts() ) :
+				the_post();
 
-			// The Query
-			$diputados = new WP_Query( $args );
+				/*
+				 * Include the Post-Type-specific template for the content.
+				 * If you want to override this in a child theme, then include a file
+				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+				 */
+				get_template_part( 'template-parts/content', get_post_type() );
 
-			// The Loop
-			if ( $diputados->have_posts() ) {
-				while ( $diputados->have_posts() ) {
-					$diputados->the_post();
-					get_template_part( 'template-parts/content', get_post_type() );
-				}
-			} else {
-				// no posts found
-			}
-
-			// Restore original Post Data
-			wp_reset_postdata();
-
+			endwhile;
+		
 		else :
 
 			get_template_part( 'template-parts/content', 'none' );

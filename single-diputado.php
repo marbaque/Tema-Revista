@@ -52,10 +52,17 @@ get_header();
             <h2><?= $nombre; ?></h2>
 
             <ul>
-                <?php 
+            <?php 
+                // get the current taxonomy term
+                $term = get_field('fraccion');
+                $termUrl = get_category_link( $term );
                 
-                echo get_the_term_list(
-                $post->ID, 'fraccion', __('<li>', 'pemscores'), ', ', '</li>' ); 
+                if( $term ): ?>
+
+                    <a href="<?= $termUrl;  ?>"><p><?= $term->name; ?> <img class="bandera" src="<?php the_field('bandera', $term); ?>" aria-hidden></p></a>
+                    
+
+                <?php endif;
                 
                 $provincia = get_field('provincia');
                 if ($provincia) {

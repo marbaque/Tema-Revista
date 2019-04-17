@@ -37,8 +37,17 @@
 
         <h2 class="entry-title"><a href="<?= esc_url( get_permalink() ); ?>" rel="bookmark"><?= $nombre; ?></a></h2>
 
-        <?= get_the_term_list(
-            $post->ID, 'fraccion', __('<p><strong>Fracción:</strong> ', 'pemscores'), ', ', '</p>' ); ?>
+        <?php 
+        // get the current taxonomy term
+        $term = get_field('fraccion');
+        $termUrl = get_category_link( $term );
+        
+        if( $term ): ?>
+
+            <a href="<?= $termUrl;  ?>"><p><?= $term->name; ?> <img class="bandera" src="<?php the_field('bandera', $term); ?>" aria-hidden></p></a>
+            
+
+        <?php endif; ?>
 
 		<div class="continue-reading">
 			<?php
