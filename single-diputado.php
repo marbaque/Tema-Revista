@@ -11,6 +11,7 @@ get_header();
 ?>
 
 	<div class="widget-area" role="sidebar">
+    
         <div class="widget widget-personal">
         
             <?php 
@@ -96,7 +97,7 @@ get_header();
 
     <div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
+        <a class="back-link" href="<?php echo get_post_type_archive_link( 'diputado' ); ?>"><?php echo __('Diputados' , 'rev_politica'); ?></a>
 		<?php
 		while ( have_posts() ) :
 			the_post();
