@@ -37,9 +37,9 @@ get_header();
                 $twitter = get_field('twitter');
                 $email = get_field('email');
 
-                echo '<a href="' . $facebook . '" title="' . __('Facebook Page', 'rev-politica') .'">' . rev_politica_get_svg( array( 'icon' => 'facebook' , 'fallback' => true ) ) .'</a>';
-                echo '<a href="' . $twitter . '" title="'. __('Twitter Account', 'rev-politica') . '">' . rev_politica_get_svg( array( 'icon' => 'twitter' , 'fallback' => true ) ) .'</a>';
-                echo '<a href="mailto:' . $email . '" title"' . __('Send email', 'rev-politica') .'">' . rev_politica_get_svg( array( 'icon' => 'envelope-o' , 'fallback' => true ) ) .'</a>';
+                echo '<a href="' . $facebook . '" title="' . __('Facebook Page', 'rev_politica') .'">' . rev_politica_get_svg( array( 'icon' => 'facebook' , 'fallback' => true ) ) .'</a>';
+                echo '<a href="' . $twitter . '" title="'. __('Twitter Account', 'rev_politica') . '">' . rev_politica_get_svg( array( 'icon' => 'twitter' , 'fallback' => true ) ) .'</a>';
+                echo '<a href="mailto:' . $email . '" title"' . __('Send email', 'rev_politica') .'">' . rev_politica_get_svg( array( 'icon' => 'envelope-o' , 'fallback' => true ) ) .'</a>';
 
                 ?>
             </nav>
@@ -68,19 +68,19 @@ get_header();
                     echo '<li>' . $provincia . '</li>';
                 }
                 if ($email) {
-                    echo '<li>' . __( 'Email:', 'rev-politica' ) . ' ' . $email . '</li>';
+                    echo '<li>' . __( 'Email:', 'rev_politica' ) . ' ' . $email . '</li>';
                 }
                 $telA = get_field('tel_a');
                 $telB = get_field('tel_b');
                 $fax = get_field('fax');
                 if($telA) {
-                    echo '<li>' . __( 'Teléfono 1:', 'rev-politica' ) . ' ' . $telA . '</li>';
+                    echo '<li>' . __( 'Teléfono 1:', 'rev_politica' ) . ' ' . $telA . '</li>';
                 }
                 if($telB) {
-                    echo '<li>' . __( 'Teléfono 2:', 'rev-politica' ) . ' ' . $telB . '</li>';
+                    echo '<li>' . __( 'Teléfono 2:', 'rev_politica' ) . ' ' . $telB . '</li>';
                 }
                 if($fax) {
-                    echo '<li>' . __( 'Fax:', 'rev-politica' ) . ' ' . $fax . '</li>';
+                    echo '<li>' . __( 'Fax:', 'rev_politica' ) . ' ' . $fax . '</li>';
                 }
                 
                 

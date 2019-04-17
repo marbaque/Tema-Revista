@@ -4,17 +4,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2019-03-11 01:11+0000\n"
+"POT-Creation-Date: 2019-04-17 17:08+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-03-11 01:14+0000\n"
+"PO-Revision-Date: 2019-04-17 17:09+0000\n"
 "Last-Translator: admin <mario.badilla@gmail.com>\n"
 "Language-Team: Español de Costa Rica\n"
 "X-Generator: Loco https://localise.biz/\n"
 "Language: es_CR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Loco-Version: 2.2.1; wp-5.1"
+"X-Loco-Version: 2.2.2; wp-5.1.1"
 
 #: functions.php:49
 msgid "Primary"
@@ -116,6 +116,34 @@ msgstr "Ir al contenido"
 msgid "Primary Menu"
 msgstr "Menú principal"
 
+#: single-diputado.php:40
+msgid "Facebook Page"
+msgstr "Página de Facebook"
+
+#: single-diputado.php:41
+msgid "Twitter Account"
+msgstr "Cuenta de Twitter"
+
+#: single-diputado.php:42
+msgid "Send email"
+msgstr "Enviar correo"
+
+#: single-diputado.php:71
+msgid "Email:"
+msgstr "Correo:"
+
+#: single-diputado.php:77
+msgid "Teléfono 1:"
+msgstr ""
+
+#: single-diputado.php:80
+msgid "Teléfono 2:"
+msgstr ""
+
+#: single-diputado.php:83
+msgid "Fax:"
+msgstr ""
+
 #: inc/icons.php:39
 msgid "Please define default parameters in the form of an array."
 msgstr "Por favor, defina los ajustes por defecto en forma de array."
@@ -216,6 +244,10 @@ msgid ""
 "searching can help."
 msgstr ""
 "Parece que no pudimos encontrar lo que busca. ¿Quiere hacer una búsqueda?"
+
+#: template-parts/content-single-diputado.php:22
+msgid "Contact "
+msgstr "Contacte a "
 
 #: template-parts/content-page.php:24
 msgid "Pages:"

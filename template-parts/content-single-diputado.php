@@ -19,7 +19,7 @@ $email = get_field( 'email' );
 	<div class="post_content">
 
 		<header class="entry-header">
-			<h1 class="entry-title"><?= __( 'Contact ', 'rev-politica' ) . $nombre; ?></h1>
+			<h1 class="entry-title"><?= __( 'Contact ', 'rev_politica' ) . $nombre; ?></h1>
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
