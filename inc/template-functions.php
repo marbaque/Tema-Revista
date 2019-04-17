@@ -59,5 +59,24 @@ function my_acf_json_save_point( $path ) {
     return $path;
     
 }
- 
-?>
+
+// Auto-populate post title with ACF.
+function jb_update_postdata( $value, $post_id, $field ) {
+	
+	$name = get_field('nombre', $post_id);
+	
+	$slug = sanitize_title( $title );
+  
+	$postdata = array(
+	     'ID'          => $post_id,
+         'post_title'  => $name,
+	     'post_type'   => 'diputado',
+	     'post_name'   => $slug
+  	);
+  
+	wp_update_post( $postdata );
+	
+	return $value;
+	
+}
+add_filter('acf/update_value/name=nombre', 'jb_update_postdata', 10, 3);

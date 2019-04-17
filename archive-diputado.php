@@ -24,11 +24,12 @@ get_header();
 			<?php
 			// WP_Query arguments
 			$args = array (
-				'post_type'              => 'diputado',
-				'post_status'            => 'publish',
-				'order'                  => 'DESC',
-				'orderby'                => 'meta_value=name',
-				'posts_per_page' 		=> -1 
+				'post_type'			=> 'diputado',
+				'post_status'		=> 'publish',
+				'order'				=> 'ASC',
+				'meta_key'			=> 'nombre',
+				'orderby'			=> 'meta_value',
+				'posts_per_page'	=> -1 
 			);
 
 			// The Query
