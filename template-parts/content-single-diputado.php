@@ -28,7 +28,7 @@ $email = get_field( 'email' );
 		
 		<p>Complete el siguiente formulario, para enviar escribirle a <strong><?= $nombre; ?></strong>. Recuerde mantener el respeto y la objetividad en sus apreciaciones.</p>
 
-		<?= do_shortcode('[contact_form]'); ?>
+		<?= do_shortcode('[hf_form slug="contacte-un-diputado"]'); ?>
 		
 		<p>Los mensajes enviado por medio de este formulario serán revisados por un miembro de esta iniciativa, antes de enviarse al diputado o diputada.</p>
 		</div><!-- .entry-content -->
