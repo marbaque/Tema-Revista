@@ -113,3 +113,14 @@ function revista_show_all_work( $query ) {
         }
     }
 }
+
+
+add_filter( 'hf_form_markup', function( $markup ) {
+	$email = get_field('email');
+
+	if ($email) {
+		$markup .= '<input type="hidden" name="HIDDEN_EMAIL" value="' . $email . '" />';
+		return $markup;
+	}
+	
+});
