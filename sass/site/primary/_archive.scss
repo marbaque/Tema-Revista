@@ -47,10 +47,9 @@
         width: 100%;
         object-fit: cover;
         object-position: center;
-        transition: .5s all;
+        transition: .5s transform;
+        
         &:hover {
-          -webkit-filter: contrast(120%); /* Safari */
-          filter: contrast(120%);
           transform: scale(1.1);
         }
       }

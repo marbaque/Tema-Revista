@@ -112,12 +112,13 @@
 .menu-toggle {
   position: absolute;
   right: 10px;
-  top: 10px;
+  top: 1em;
   width: 30px; height: 30px;
   @include hide-text();
   background: white;
   border: 0;
-  background: url("img/flag.svg") no-repeat center center;
+	background: url("img/flag.svg") no-repeat center center;
+	border-radius: 0;
 }
 
 .main-navigation {

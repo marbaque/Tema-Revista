@@ -145,24 +145,24 @@ function rev_politica_fonts_url() {
 
 	/**
 	 * Translators: If there are characters in your language that are not
-	 * supported by Alegreya Sans and Alegreya, translate this to 'off'. Do not translate
+	 * supported by Source Sans Pro and Bitter, translate this to 'off'. Do not translate
 	 * into your own language.
 	 */
-	$alegreya_sans = _x( 'on', 'Alegreya Sans font: on or off', 'rev_politica' );
-	$alegreya = _x( 'on', 'Alegreya font: on or off', 'rev_politica' );
+	$sourceSansPro = _x( 'on', 'Source Sans Pro font: on or off', 'rev_politica' );
+	$bitter = _x( 'on', 'Bitter font: on or off', 'rev_politica' );
 
 	$font_families = array();
 
-	if ( 'off' !== $alegreya_sans ) {
-		$font_families[] = 'Alegreya Sans:400,400i,700,700i';
+	if ( 'off' !== $sourceSansPro ) {
+		$font_families[] = 'Source Sans Pro:400,400i,700,700i';
 	}
 
-	if ( 'off' !== $alegreya ) {
-		$font_families[] = 'Alegreya:400,400i,700,700i';
+	if ( 'off' !== $bitter ) {
+		$font_families[] = 'Bitter:400,400i,700';
 	}
 
 
-	if ( in_array( 'on', array($alegreya_sans, $alegreya) ) ) {
+	if ( in_array( 'on', array($sourceSansPro, $bitter) ) ) {
 
 		$query_args = array(
 			'family' => urlencode( implode( '|', $font_families ) ),
@@ -200,7 +200,7 @@ add_filter( 'wp_resource_hints', 'rev_politica_resource_hints', 10, 2 );
  * Enqueue scripts and styles.
  */
 function rev_politica_scripts() {
-	// Enqueue Google Fonts: Alegreya Sans and Alegreya
+	// Enqueue Google Fonts: Source Sans Pro and Bitter
 	// Add custom fonts, used in the main stylesheet.
 	wp_enqueue_style( 'rev_politica-fonts', rev_politica_fonts_url() );
 

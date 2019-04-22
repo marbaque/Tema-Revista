@@ -8,9 +8,9 @@ textarea {
 	font-family: $font__main;
 	@include font-size(1);
 	line-height: $font__line-height-body;
-
+	font-weight: 400;
 	@media screen and (min-width: $query__sm) {
-		@include font-size(1.4);
+		@include font-size(1.1);
 	}
 }
 

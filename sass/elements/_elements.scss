@@ -31,4 +31,10 @@ figure {
 	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
 }
 
+figcaption {
+	font-size: .8em;
+	color: #777;
+}
+
+
 @import "tables";

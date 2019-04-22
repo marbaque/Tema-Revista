@@ -5,15 +5,14 @@ Theme URI: https://github.com/marbaque/Tema-Revista
 Author: Mario Badilla
 Author URI: http://mariobadilla.com
 Description: Tema para adopte un diputado
-Version: 1.4
+Version: 1.5.1
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: rev_politica
 GitHub Theme URI: https://github.com/marbaque/Tema-Revista
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Tags: custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
 
 Revista-politica is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
@@ -388,10 +387,11 @@ select,
 optgroup,
 textarea {
 	color: #484f59;
-	font-family: "Alegreya Sans", sans-serif;
+	font-family: "Source Sans Pro", sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
-	line-height: 1.5;
+	line-height: 1.55;
+	font-weight: 400;
 }
 
 @media screen and (min-width: 600px) {
@@ -401,16 +401,16 @@ textarea {
 	select,
 	optgroup,
 	textarea {
-		font-size: 22.4px;
-		font-size: 1.4rem;
+		font-size: 17.6px;
+		font-size: 1.1rem;
 	}
 }
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
-	font-family: "Alegreya", Georgia, Times, serif;
+	font-family: "Bitter", Georgia, Times, serif;
 	line-height: 1.2;
-	font-weight: 700;
+	font-weight: 400;
 }
 
 h1 {
@@ -427,10 +427,12 @@ h3 {
 
 h4 {
 	font-size: 1.4em;
+	font-weight: 700;
 }
 
 h5 {
 	font-size: 1.2em;
+	font-weight: 700;
 }
 
 p {
@@ -455,7 +457,7 @@ blockquote:before {
 	top: -.2em;
 	left: -.13em;
 	content: "“";
-	font-family: "Alegreya Sans", sans-serif;
+	font-family: "Source Sans Pro", sans-serif;
 	font-size: 12em;
 	line-height: 100%;
 	color: white;
@@ -564,6 +566,11 @@ img {
 figure {
 	margin: 1em 0;
 	/* Extra wide images within figure tags don't overflow the content area. */
+}
+
+figcaption {
+	font-size: .8em;
+	color: #777;
 }
 
 table {
@@ -850,7 +857,7 @@ a:hover, a:active {
 .menu-toggle {
 	position: absolute;
 	right: 10px;
-	top: 10px;
+	top: 1em;
 	width: 30px;
 	height: 30px;
 	text-indent: -100vw;
@@ -859,10 +866,11 @@ a:hover, a:active {
 	background: white;
 	border: 0;
 	background: url("img/flag.svg") no-repeat center center;
+	border-radius: 0;
 }
 
 .main-navigation {
-	background: #1b75bc;
+	background: #525ddc;
 }
 
 .main-navigation ul {
@@ -881,7 +889,7 @@ a:hover, a:active {
 	width: 100%;
 	padding: 1em;
 	text-decoration: none;
-	background: #1b75bc;
+	background: #525ddc;
 	color: white;
 	border: 1px solid #f4f6f8;
 	transition: background-color .5s;
@@ -1020,7 +1028,8 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .widget {
 	margin: 0 0 1.5em;
-	font-size: .8em;
+	font-size: 16px;
+	font-size: 1rem;
 	background: #f4f6f8;
 	padding: 1em 2em;
 	/* Make sure select elements fit in widgets. */
@@ -1187,7 +1196,7 @@ a:hover, a:active {
 }
 
 .site-header .site-branding {
-	font-family: "Alegreya", Georgia, Times, serif;
+	font-family: "Bitter", Georgia, Times, serif;
 	margin: 1em;
 	line-height: 1.1;
 	min-width: 340px;
@@ -1228,17 +1237,17 @@ a:hover, a:active {
 .site-header .site-branding .site-description {
 	margin: 0;
 	padding: 0;
-	font-weight: 700;
 }
 
 .site-header .site-branding .site-title {
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	line-height: 1.2;
+	font-weight: 700;
 }
 
 @media screen and (min-width: 960px) {
 	.site-header .site-branding .site-title {
-		font-size: 1.8rem;
+		font-size: 1.4rem;
 	}
 }
 
@@ -1248,11 +1257,13 @@ a:hover, a:active {
 
 .site-header .site-branding .site-description {
 	font-size: .8rem;
+	line-height: 1.2;
+	font-style: italic;
 }
 
 @media screen and (min-width: 960px) {
 	.site-header .site-branding .site-description {
-		font-size: 1.1rem;
+		font-size: 1rem;
 	}
 }
 
@@ -1316,12 +1327,10 @@ a:hover, a:active {
 	   object-fit: cover;
 	-o-object-position: center;
 	   object-position: center;
-	transition: .5s all;
+	transition: .5s transform;
 }
 
 .archive-view .post figure.index-image img:hover, .archive-view .page figure.index-image img:hover {
-	/* Safari */
-	filter: contrast(120%);
 	transform: scale(1.1);
 }
 
@@ -1430,7 +1439,7 @@ a:hover, a:active {
 .archive-view.post-type-archive-diputado .site-main .diputado img, .archive-view.tax-fraccion .site-main .diputado img {
 	width: 64px;
 	height: 64px;
-	background: #2b3990;
+	background: #171c56;
 }
 
 .archive-view.post-type-archive-diputado .site-main .diputado .post_content, .archive-view.tax-fraccion .site-main .diputado .post_content {
@@ -1444,7 +1453,7 @@ a:hover, a:active {
 }
 
 .archive-view.post-type-archive-diputado .site-main .diputado .post_content h2.entry-title a, .archive-view.tax-fraccion .site-main .diputado .post_content h2.entry-title a {
-	color: #1b75bc;
+	color: #525ddc;
 	text-decoration: none;
 }
 
@@ -1507,12 +1516,12 @@ a:hover, a:active {
 }
 
 .single .entry-meta {
-	color: #2b3990;
+	color: #171c56;
 	font-size: .8em;
 }
 
 .single .entry-meta a {
-	color: #2b3990;
+	color: #171c56;
 }
 
 .single .entry-meta > span:after {
@@ -1557,7 +1566,7 @@ a:hover, a:active {
 .single-diputado .widget-personal .avatar img {
 	width: 150px;
 	height: 150px;
-	background-color: #2b3990;
+	background-color: #171c56;
 }
 
 .single-diputado .widget-personal .redes {
@@ -1620,10 +1629,11 @@ a:hover, a:active {
 ## Footer
 --------------------------------------------------------------*/
 .site-footer {
-	background: #2b3990;
-	color: #f4f6f8;
+	background: #171c56;
+	color: #909acd;
 	padding: 2em 1em;
-	font-size: .9em;
+	font-size: 19.2px;
+	font-size: 1.2rem;
 }
 
 @media screen and (min-width: 960px) {
@@ -1671,7 +1681,7 @@ a:hover, a:active {
 }
 
 .site-footer .footer__wrap .site-info {
-	font-size: .8em;
+	font-family: "Bitter", Georgia, Times, serif;
 }
 
 /*--------------------------------------------------------------
