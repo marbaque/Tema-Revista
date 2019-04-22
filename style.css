@@ -1172,6 +1172,15 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
+figure.home-banner {
+	margin: 0 !important;
+	padding: 0;
+}
+
+figure.home-banner img {
+	width: 100%;
+}
+
 .site-header {
 	width: 100%;
 	height: auto;
